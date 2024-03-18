@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findUniq(arr) {
+        // do magic
+        return parseFloat(
+          arr.filter((x) => arr.indexOf(x) == arr.lastIndexOf(x)).join("")
+        );
+      }
+      console.log(findUniq([1, 1, 1, 2, 1, 1])); //output 2
+      console.log(findUniq([0, 0, 0.55, 0, 0])); //output .055
+    </script>
+  </body>
+</html>
